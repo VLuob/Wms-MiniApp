@@ -1,0 +1,35 @@
+/* pages/news/news.wxss */
+
+
+
+.news {
+  display: flex;
+  height: 138rpx;
+  align-items: center;
+  position: relative;
+}
+
+.news image {
+  height: 100rpx;
+  width: 100rpx;
+  margin: 0 29rpx;
+}
+
+.news .outinfo {
+  font: 30rpx "";
+  color: #333;
+  margin-bottom: 14rpx;
+}
+
+.news .outtext {
+  font: 24rpx "";
+  color: #999;
+}
+
+.news .time {
+  position: absolute;
+  right: 30rpx;
+  top: 41rpx;
+  font: 18rpx "";
+  color: #999;
+}

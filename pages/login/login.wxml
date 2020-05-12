@@ -1,0 +1,15 @@
+<!--pages/login/login.wxml-->
+<view class="nav" style="padding-top:{{navh}}rpx;">
+  <text>登录</text>
+  <view class="back" bindtap="go">
+    <image src="/images/backw.png" />
+  </view>
+</view>
+<view class="body">
+  <image src="/images/head.png" class="head" />
+  <button class="btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">微信登录</button>
+  <text class="qt">其它登录方式</text>
+  <image src="/images/phone.png" class="phone" bindtap="phonelogin" />
+  <text class="code">验证码</text>
+</view>
+<image src="/images/loginbg.png" class="loginbg"></image>

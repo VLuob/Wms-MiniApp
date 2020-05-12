@@ -1,0 +1,10 @@
+<!--pages/search/search.wxml-->
+<view class="nav" style="padding-top:{{navh}}rpx;background:#65C2FB">
+  <view style="position:relative;">
+    <input class="ipt" placeholder="按时间，品名查询预约入库" />
+    <image src="/images/sea.png"  class=".sea"/>
+  </view>
+  <view class="back" bindtap="go" style="width:70rpx;margin-top:10rpx;" >
+    <image src="/images/backb.png" />
+  </view>
+</view>

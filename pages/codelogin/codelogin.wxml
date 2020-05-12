@@ -1,0 +1,18 @@
+<!--pages/codelogin/codelogin.wxml-->
+<view class="nav" style="padding-top:{{navh}}rpx;">
+  <text>手机验证码登录</text>
+  <view class="back" bindtap="go">
+    <image src="/images/backw.png" />
+  </view>
+</view>
+<view class="login">
+  <view class='login_ipt'>
+    <input class="ipt" value="{{inputvalue}}" bindinput="phone" />
+    <image src="/images/cls.png" bindtap="clsChange" />
+    <view class="line"></view>
+    <view class="txt" bindtap="submit">发送验证码</view>
+  </view>
+  <input class="input" placeholder="输入验证码" bindinput="codeChange" />
+</view>
+<view class="tip">首次用手机号登录将自动为您注册</view>
+<view class="btn" style="background:#{{flag===true? bl : ''}}" bindtap="loginChange">登录</view>

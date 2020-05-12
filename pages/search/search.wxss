@@ -1,0 +1,20 @@
+/* pages/search/search.wxss */
+
+.ipt {
+  height: 70rpx;
+  width: 500rpx;
+  background: #d2edfd;
+  border-radius: 10rpx;
+  margin-left: 70rpx;
+  font: 26rpx '';
+  color: #999;
+  position: relative;
+}
+
+.sea {
+  position: absolute;
+  height: 32rpx;
+  width: 32rpx;
+  top: 20rpx;
+  left: 130rpx;
+}

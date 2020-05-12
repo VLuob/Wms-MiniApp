@@ -1,0 +1,58 @@
+/* pages/user/user.wxss */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 130rpx;
+}
+
+.list .list_box {
+  display: flex;
+  position: relative;
+  height: 100rpx;
+  align-items: center;
+}
+
+.list .list_box image {
+  height: 28rpx;
+  width: 15rpx;
+  position: absolute;
+  right: 30rpx;
+}
+
+.list .list_box text {
+  font: 32rpx "";
+  color: #333;
+  position: absolute;
+  left: 79rpx;
+}
+
+.headbox {
+  position: relative;
+}
+
+.bg {
+  height: 212rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.head {
+  height: 134rpx;
+  width: 134rpx;
+  position: absolute;
+  top:66rpx;
+  margin:0 auto;
+  left:0;
+  right:0;
+}
+
+.name {
+  font: 42rpx '';
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 32rpx;
+}

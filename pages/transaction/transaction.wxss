@@ -1,0 +1,92 @@
+/* pages/transaction/transaction.wxss */
+
+/* 选项卡 start */
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  height: 104rpx;
+  display: flex;
+  flex-flow: row;
+  line-height: 48rpx;
+  justify-content: space-around;
+  background: #f0f0f0;
+  align-items: center;
+}
+
+.swiper-tab-item {
+  height: 48rpx;
+  width: 112rpx;
+  color: #434343;
+  font: 28rpx/48rpx "";
+}
+
+.active {
+  color: #fff;
+  background: #63c2f9;
+  border-radius: 10rpx;
+  padding: 0 10rpx;
+}
+
+/* 选项卡  end */
+
+.list {
+  display: flex;
+  align-items: center;
+  margin: 31rpx 0 40rpx 58rpx;
+  position: relative;
+}
+
+.list .list_text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 43rpx;
+}
+
+.list .list_text image {
+  height: 74rpx;
+  width: 83rpx;
+}
+
+.list .list_text text {
+  font: 28rpx '';
+  color: #666;
+  margin-top: 14rpx;
+}
+
+.list .list_time {
+  display: flex;
+  align-items: center;
+}
+
+.list .list_time text {
+  font: 24rpx '';
+  color: #63c2f9;
+}
+
+.list .list_time text:nth-child(2) {
+  margin-left: 20rpx;
+}
+
+.list .list_name {
+  display: flex;
+  align-items: center;
+  margin: 0 192rpx 26rpx 0;
+}
+
+.list .list_name text {
+  font: 28rpx '';
+  color: #333;
+}
+
+.list .list_name text:nth-child(2) {
+  margin-left: 64rpx;
+}
+
+.list .tip {
+  position: absolute;
+  right: 55rpx;
+  font: 28rpx '';
+  color: #333;
+}

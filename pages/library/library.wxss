@@ -1,0 +1,43 @@
+/* pages/library/library.wxss */
+
+.library {
+  font: 28rpx/67rpx '';
+  color: #333;
+  background: #f0f0f0;
+  height: 67rpx;
+  padding-left: 28rpx;
+  box-sizing: border-box;
+}
+
+.table {
+  width: 692rpx;
+  margin: 0 auto;
+  box-shadow: 0 0 16rpx rgba(0, 0, 0, 0.1);
+  border-radius: 8rpx;
+  display: flex;
+  overflow: hidden;
+}
+
+.table .table_name {
+  display: flex;
+  flex-direction: column;
+}
+
+.table .table_name view {
+  font: 28rpx/100rpx '';
+  color: #333;
+  font-weight: bold;
+  height: 100rpx;
+  width: 165rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+  border-right: 2rpx solid #f0f0f0;
+  padding-left: 35rpx;
+  box-sizing: border-box;
+}
+
+.table .name1 view {
+  padding-left: 19rpx;
+  width: 177rpx;
+  font-size: 26rpx;
+  color: #999;
+}

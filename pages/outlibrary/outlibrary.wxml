@@ -1,0 +1,58 @@
+<!--pages/outlibrary/outlibrary.wxml-->
+<view class="nav" style="padding-top:{{navh}}rpx;background:#65C2FB">
+  <text>在线预约</text>
+  <view class="back" bindtap="go">
+    <image src="/images/backb.png" />
+  </view>
+</view>
+<view class="library">预约出库信息</view>
+<view class="screen">
+  <view class="search">
+    <input/>
+    <view>
+      <image src="/images/sea.png" style="height:32rpx;width:32rpx;margin:6rpx" />
+    </view>
+  </view>
+  <view class="screen_txt">筛选条件</view>
+</view>
+<view class="select">已选
+  <view>{{arr.length}}</view>
+</view>
+<view class="table">
+  <view class="table_name">
+    <view>品号</view>
+    <view>品名</view>
+    <view>单个重量</view>
+    <view>总件数</view>
+    <view>生产日期</view>
+    <view>保质期</view>
+    <view>产品品种</view>
+    <view>出库时间</view>
+    <view>司机姓名</view>
+    <view>司机电话</view>
+    <view>车型</view>
+    <view style="border-bottom:none">车牌号</view>
+  </view>
+  <view class="table_name name1" wx:for="{{list}}" wx:key="index">
+    <view style="position:relative">
+      1028
+      <image class="box" src="{{item.checked?'/images/sel.png':'/images/unsel.png'}}" data-index="{{index}}" data-item="{{item}}" bindtap="checkLabs" />
+    </view>
+    <view>秋刀鱼</view>
+    <view>20kg</view>
+    <view>120箱</view>
+    <view style="padding-left:10rpx;">2019/10/20</view>
+    <view>120天</view>
+    <view>120天</view>
+    <view style="display:flex;flex-direction: column;line-height:50rpx;align-item:center;">
+      <text>2019/10/20</text>
+      <text>12:00</text>
+    </view>
+    <view>张三</view>
+    <view style="padding-left:0rpx;">15722663300</view>
+    <view>厢式货车</view>
+    <view style="border-bottom:none">JIP56334</view>
+  </view>
+</view>
+<view style="margin-top:31rpx;"></view>
+<view class="sub">保存</view>

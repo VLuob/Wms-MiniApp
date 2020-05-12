@@ -1,0 +1,81 @@
+/* pages/perfectinfo/perfectinfo.wxss */
+
+.head {
+  height: 207rpx;
+  background-image: linear-gradient(#63c2f9, #a2dafa);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.head image {
+  height: 100rpx;
+  width: 100rpx;
+  margin-bottom: 11rpx;
+}
+
+.head text {
+  font: 28rpx '';
+  color: #333;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info text {
+  font: 30rpx '';
+  color: #333;
+  margin: 25rpx 0 48rpx;
+}
+
+.info input {
+  height: 78rpx;
+  width: 604rpx;
+  border: 2rpx solid #9b9b9b;
+  border-radius: 10rpx;
+  font: 28rpx/78rpx '';
+  color: #666;
+  padding-left: 35rpx;
+  box-sizing: border-box;
+}
+
+.info .info_code {
+  display: flex;
+  margin-bottom: 33rpx;
+  justify-content: space-between;
+}
+
+.info .info_code input {
+  width: 356rpx;
+}
+
+.info .info_code view {
+  width: 232rpx;
+  height: 78rpx;
+  background: #65c2f9;
+  border-radius: 10rpx;
+  font: 30rpx/78rpx '';
+  color: #333;
+  text-align: center;
+  margin-left: 15rpx;
+}
+
+.btn {
+  width: 199rpx;
+  height: 78rpx;
+  background: #f0f0f0;
+  border-radius: 70rpx;
+  font: 30rpx/78rpx '';
+  color: #999;
+  text-align: center;
+}
+
+.btn1 {
+  background: #65c2f9;
+  color: #fff;
+}

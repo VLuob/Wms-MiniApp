@@ -1,0 +1,47 @@
+/**app.wxss**/
+
+page {
+  font-family: PingFang-SC-Medium;
+  font-weight: Medium;
+}
+
+/* 头部 */
+
+.nav {
+  font:36rpx "";
+  color: #333;
+  text-align: center;
+  height: 88rpx;
+  border-bottom: 2rpx solid #eee;
+  background: #fff;
+  position: relative;
+}
+
+.nav .back {
+  height: 100%;
+  width: 100rpx;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .back image {
+  height: 33rpx;
+  width: 20rpx;
+  margin-top:28rpx;
+}
+
+/* 遮罩层 */
+
+.mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 99999;
+}

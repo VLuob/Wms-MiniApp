@@ -1,0 +1,45 @@
+<!--pages/enterrecord/enterrecord.wxml-->
+<view class="nav" style="padding-top:{{navh}}rpx;background:#65C2FB">
+  <text>在线预约</text>
+  <view class="back" bindtap="go">
+    <image src="/images/backb.png" />
+  </view>
+</view>
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">入库</view>
+  <view class="line"></view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">撤销</view>
+</view>
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab" style="height:{{h}}rpx">
+  <swiper-item>
+    <view class="list" wx:for="{{list}}" wx:key='index'>
+      <view class="list_box">
+        <view class="name">雪花牛肉</view>
+        <text>下单时间</text>
+        <text>出库时间</text>
+      </view>
+      <view class="list_box">
+        <view class="name">{{item.id}}箱</view>
+        <text>2016-7-8-12:30</text>
+        <text>2016-7-8-12:31</text>
+      </view>
+      <view class="btn" bindtap="revoke" data-item="{{item}}" data-index="{{index}}">撤销</view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="list" wx:for="{{revoke}}" wx:key='index'>
+      <view class="list_box">
+        <view class="name">雪花牛肉</view>
+        <text>下单时间</text>
+        <text>出库时间</text>
+      </view>
+      <view class="list_box">
+        <view class="name">{{item.id}}箱</view>
+        <text>2016-7-8-12:30</text>
+        <text>2016-7-8-12:31</text>
+      </view>
+      <view class="btn" style="background:#fff"></view>
+    </view>
+  </swiper-item>
+
+</swiper>

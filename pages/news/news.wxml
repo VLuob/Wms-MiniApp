@@ -1,0 +1,10 @@
+<!--pages/news/news.wxml-->
+<view class="nav" style="padding-top:{{navh}}rpx">消息中心</view>
+<view class="news">
+  <image src="/images/newsicon.png" />
+  <view>
+    <view class="outinfo">出库消息</view>
+    <view class="outtext">您已预约出库</view>
+  </view>
+  <text class="time">2019-09-21 19:34:50</text>
+</view>

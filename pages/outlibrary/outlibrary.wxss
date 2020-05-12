@@ -1,0 +1,122 @@
+/* pages/outlibrary/outlibrary.wxss */
+
+.select {
+  height: 93rpx;
+  width: 692rpx;
+  margin: 0 auto 7rpx;
+  background: #f9bb63;
+  display: flex;
+  align-items: center;
+  font: 38rpx '';
+  color: #fff;
+  padding-left: 27rpx;
+  box-sizing: border-box;
+}
+
+.select view {
+  border-radius: 50%;
+  background: #63c2f9;
+  height: 38rpx;
+  width: 38rpx;
+  font: 30rpx/38rpx '';
+  text-align: center;
+  margin: 10rpx 0 0 10rpx;
+}
+
+.screen {
+  display: flex;
+  justify-content: space-around;
+  margin: 26rpx 0 17rpx;
+}
+
+.screen .search {
+  height: 46rpx;
+  width: 405rpx;
+  border: 2rpx solid #d9d6d9;
+  display: flex;
+}
+
+.screen .search input {
+  width: 360rpx;
+  padding-left: 12rpx;
+  box-sizing: border-box;
+}
+
+.screen .screen_txt {
+  width: 178rpx;
+  height: 46rpx;
+  border: 2rpx solid #d9d6d9;
+  text-align: center;
+  font: 24rpx/46rpx '';
+  color: #999;
+}
+
+.screen .search view {
+  border-left: 2rpx solid #d9d6d9;
+  height: 100%;
+}
+
+.library {
+  font: 28rpx/67rpx '';
+  color: #333;
+  background: #f0f0f0;
+  height: 67rpx;
+  padding-left: 28rpx;
+  box-sizing: border-box;
+}
+
+.table {
+  width: 692rpx;
+  margin: 0 auto;
+  box-shadow: 0 0 16rpx rgba(0, 0, 0, 0.1);
+  border-radius: 8rpx;
+  display: flex;
+  overflow: hidden;
+}
+
+.table .table_name {
+  display: flex;
+  flex-direction: column;
+}
+
+.table .table_name view {
+  font: 28rpx/100rpx '';
+  color: #333;
+  font-weight: bold;
+  height: 100rpx;
+  width: 165rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+  border-right: 2rpx solid #f0f0f0;
+  padding-left: 35rpx;
+  box-sizing: border-box;
+}
+
+.table .table_name .box {
+  position: absolute;
+  top: 11rpx;
+  right: 11rpx;
+  height: 39rpx;
+  width: 39rpx;
+  border-radius: 50%;
+}
+
+.box1 {
+  background: red;
+}
+
+.table .name1 view {
+  padding-left: 19rpx;
+  width: 177rpx;
+  font: 600 26rpx/100rpx '';
+  color: #999;
+}
+
+.sub {
+  width: 525rpx;
+  height: 74rpx;
+  font: 32rpx/74rpx "";
+  color: #fff;
+  text-align: center;
+  background: #61c4f7;
+  margin: 40rpx auto 28rpx;
+}

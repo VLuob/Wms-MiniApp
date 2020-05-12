@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<view class="bg">
+  <view class="top" style="padding-top:{{navh}}rpx">库存助手-首页</view>
+  <view class="top_ipt">
+    <input class="ipt" value="按时间，品名查询预约入库" bindtap="search" />
+    <image class="btnimg" src="/images/btnimg.png" bindtap="onClickShow" />
+    <image class="seach" src="/images/seach.png" />
+  </view>
+</view>
+<view class="library">
+  <view class="library_box" bindtap="enterrecord">
+    <image src="/images/in.png" />
+    <text>入库</text>
+  </view>
+  <view class="library_box" bindtap="outrecord">
+    <image src="/images/out.png" />
+    <text>出库</text>
+  </view>
+  <view class="library_box" bindtap="library">
+    <image src="/images/stock.png" />
+    <text>库存</text>
+  </view>
+</view>
+<view class="main">
+  <view style="display:flex; justify-content: space-around;">
+    <view class="main_box" bindtap="onClickShow">
+      <image src="/images/appointment.png" />
+      <text>在线预约</text>
+    </view>
+    <view class="main_box" bindtap="transaction">
+      <image src="/images/history.png" />
+      <text>单据历史</text>
+    </view>
+    <view class="main_box" bindtap="outrecord">
+      <image src="/images/outrecord.png" />
+      <text>出库记录</text>
+    </view>
+  </view>
+  <view style="display:flex; justify-content: space-around;">
+    <view class="main_box" bindtap="enterrecord">
+      <image src="/images/inrecord.png" />
+      <text>入库记录</text>
+    </view>
+    <view class="main_box">
+    </view>
+    <view class="main_box">
+    </view>
+  </view>
+  <text class="tip">WMS助手：下单需提前24小时预约</text>
+</view>
+<!-- 选择预约入库 进库 -->
+<view class="mask" wx:if="{{show}}" bindtap="onClickHide"></view>
+<view class="select" wx:if="{{show}}">
+  <text class="title">预约项目</text>
+  <image class="close" src="/images/close.png" bindtap="onClickHide" />
+  <view class="select_box" wx:for="{{arr}}" wx:for-item="v" wx:key="k" bindtap="selSingle" data-index="{{index}}">
+    <text>{{v.name}}</text>
+    <image class="img " src="{{v.checked?'/images/sel.png':'/images/unsel.png'}}" />
+  </view>
+  <view class="sure" bindtap="okChange">确定</view>
+</view>

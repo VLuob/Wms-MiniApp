@@ -1,0 +1,26 @@
+<!--pages/user/user.wxml-->
+<view class="nav" style="padding-top:{{navh}}rpx;background:#63C2F9;border:none;">我的</view>
+<view class="headbox">
+  <image class="bg" src="/images/minebg.png" />
+  <image src="/images/head.png" class="head" />
+</view>
+<view class="name" wx:if="{{username}}">{{username}}</view>
+<view class="name" wx:else bindtap="login">点击登录</view>
+<view class="list">
+  <view class="list_box" bindtap="outrecord">
+    <text>我的预约(出库)</text>
+    <image src="/images/jt.png" />
+  </view>
+  <view class="list_box" bindtap="enterrecord">
+    <text>我的预约(入库)</text>
+    <image src="/images/jt.png" />
+  </view>
+  <view class="list_box" bindtap="transaction">
+    <text>交易记录</text>
+    <image src="/images/jt.png" />
+  </view>
+  <view class="list_box" bindtap="userinfo">
+    <text>个人信息</text>
+    <image src="/images/jt.png" />
+  </view>
+</view>

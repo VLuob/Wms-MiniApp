@@ -1,0 +1,79 @@
+/* pages/enterrecord/enterrecord.wxss */
+
+/* 选项卡 start */
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  border-bottom: 4rpx solid #e4e4e4;
+  background: #fff;
+}
+
+.swiper-tab-item {
+  width: 374rpx;
+  color: #434343;
+  font: 28rpx/100rpx "";
+  height: 100rpx;
+}
+
+.active {
+  color: #39a9ff;
+  border-bottom: 4rpx solid #39a9ff;
+}
+
+.line {
+  height: 59rpx;
+  width: 2rpx;
+  background: #d9d6d9;
+  margin-top: 20rpx;
+}
+
+/* 选项卡 end */
+
+page {
+  background: #f0f0f0;
+}
+
+.list {
+  height: 235rpx;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom:20rpx;
+}
+
+.list .list_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.list .list_box .name {
+  font: 38rpx '';
+  color: #333;
+  font-weight: bold;
+}
+
+.list .list_box text {
+  font: 26rpx '';
+  color: #63c2f9;
+}
+
+.list .list_box text:nth-child(2) {
+  margin: 38rpx 0 27rpx;
+}
+
+.list .btn {
+  height: 74rpx;
+  width: 122rpx;
+  color: #fff;
+  background: #01c204;
+  font: 32rpx/74rpx '';
+  text-align: center;
+  border-radius: 10rpx;
+}

@@ -1,0 +1,183 @@
+/* pages/enterlibrary/enterlibrary.wxss */
+
+.title {
+  height: 77rpx;
+  background: #f0f0f0;
+  font: 28rpx/77rpx '';
+  color: #333;
+  padding-left: 28rpx;
+  box-sizing: border-box;
+}
+
+.table {
+  height: 400rpx;
+  width: 692rpx;
+  border: 4rpx solid #bdd8e8;
+  background: #d0edff;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  margin: 15rpx auto 18rpx;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 16rpx rgba(0, 0, 0, 0.1);
+}
+
+.table .table_title {
+  font: 26rpx '';
+  color: #333;
+  margin: 33rpx 0 22rpx 39rpx;
+}
+
+.table .table_title text {
+  height: 24rpx;
+  width: 22rpx;
+  color: #cb4766;
+}
+
+.table .table_box {
+  height: 53rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 22rpx;
+}
+
+.table .table_box input {
+  width: 375rpx;
+  background: #fff;
+  height: 53rpx;
+  border-radius: 5rpx;
+  position: absolute;
+  right: 71rpx;
+  box-sizing: border-box;
+  padding-left: 12rpx;
+  box-shadow: 0 0 6rpx rgba(23, 23, 23, 0.16);
+}
+
+.table .table_box .input {
+  width: 375rpx;
+  background: #fff;
+  height: 53rpx;
+  border-radius: 5rpx;
+  position: absolute;
+  right: 71rpx;
+  box-sizing: border-box;
+  padding-left: 12rpx;
+  box-shadow: 0 0 6rpx rgba(23, 23, 23, 0.16);
+  font: 24rpx/53rpx '';
+}
+
+.table .table_box .selbox {
+  width: 375rpx;
+  height: 53rpx;
+  border-radius: 5rpx;
+  position: absolute;
+  right: 71rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+  display: flex;
+}
+
+.table .table_box .selbox .selb {
+  width: 177rpx;
+  background: #fff;
+  box-shadow: 0 0 6rpx rgba(23, 23, 23, 0.16);
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 12rpx;
+  font: 24rpx/53rpx '';
+}
+
+.table .table_box .selbox .selb .select {
+  position: absolute;
+  right: 0;
+}
+
+.table .table_box textarea {
+  width: 375rpx;
+  background: #fff;
+  height: 84rpx;
+  border-radius: 5rpx;
+  position: absolute;
+  right: 71rpx;
+  box-sizing: border-box;
+  padding-left: 12rpx;
+  margin-top: 17rpx;
+  box-shadow: 0 0 6rpx rgba(23, 23, 23, 0.16);
+}
+
+.table .table_box text {
+  font: 26rpx '';
+  color: #333;
+  position: absolute;
+  left: 60rpx;
+}
+
+.table .table_box .select {
+  height: 53rpx;
+  width: 53rpx;
+  background: #63c2f9;
+  border-radius: 4rpx;
+  position: absolute;
+  right: 73rpx;
+  box-shadow: 0 0 6rpx #171717;
+  z-index: 1;
+  top: 0;
+}
+
+.table .table_box .select::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 11rpx solid transparent;
+  border-top-color: white;
+  margin: 20rpx auto;
+  box-sizing: border-box;
+}
+
+.talbe1 {
+  height: 840rpx;
+  padding-top: 39rpx;
+}
+
+.sel {
+  height: 53rpx;
+  left: 240rpx;
+  position: absolute;
+  display: flex;
+}
+
+.sel .sel_box {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.sel .sel_box:nth-child(2) {
+  margin: 0 20rpx 0 19rpx;
+}
+
+.sel .sel_box .box {
+  height: 45rpx;
+  width: 45rpx;
+}
+
+.box1 {
+  background: #09f;
+}
+
+.sel .sel_box .text {
+  font: 26rpx '';
+  color: #333;
+  margin-left: 14rpx;
+}
+
+.sub {
+  height: 74rpx;
+  font: 32rpx "";
+  color: #fff;
+  text-align: center;
+  background: #61c4f7;
+  margin: 40rpx auto 28rpx;
+}

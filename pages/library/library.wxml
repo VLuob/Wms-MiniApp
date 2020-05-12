@@ -1,0 +1,30 @@
+<!--pages/library/library.wxml-->
+<view class="nav" style="padding-top:{{navh}}rpx;background:#63C2F9;">
+  <text>库存</text>
+  <view class="back" bindtap="go">
+    <image src="/images/backb.png" />
+  </view>
+</view>
+<view class="library">所有库存</view>
+<view class="table">
+  <view class="table_name">
+    <view>货号</view>
+    <view>品名</view>
+    <view>单个重量</view>
+    <view>总件数</view>
+    <view>生产日期</view>
+    <view>保质期</view>
+    <view>入库日期</view>
+    <view style="border-bottom:none">入库单号</view>
+  </view>
+  <view class="table_name name1" wx:for="{{list}}" wx:key='index'>
+    <view>1028</view>
+    <view>秋刀鱼</view>
+    <view>20kg</view>
+    <view>120箱</view>
+    <view style="padding-left:10rpx;">2019/10/20</view>
+    <view>120天</view>
+    <view style="padding-left:10rpx;">2019/10/20</view>
+    <view style="border-bottom:none">JIP56334</view>
+  </view>
+</view>

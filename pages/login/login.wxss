@@ -1,0 +1,50 @@
+/* pages/login/login.wxss */
+
+page {
+  background: #f0f3f4;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.body .head {
+  height: 134rpx;
+  width: 134rpx;
+  margin: 147rpx 0 38rpx;
+}
+
+.body .phone {
+  height: 115rpx;
+  width: 115rpx;
+}
+
+.body .btn {
+  width: 574rpx;
+  height: 90rpx;
+  background: #5cc0fc;
+  font: 32rpx/2 "";
+  color: #fff;
+}
+
+.body .qt {
+  font: 24rpx "";
+  color: #999;
+  margin: 200rpx 0 43rpx;
+}
+
+.body .code {
+  font: 24rpx "";
+  color: #666;
+  margin: 20rpx 0 30rpx;
+}
+.loginbg{
+  width:100%;
+  position:fixed;
+  bottom:0;
+ height:300rpx;
+}

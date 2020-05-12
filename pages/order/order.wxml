@@ -1,0 +1,83 @@
+<!--pages/order/order.wxml-->
+<view class="nav" style="padding-top:{{navh}}rpx;background:#63C2F9;">
+  <text>入库单</text>
+  <view class="back" bindtap="go">
+    <image src="/images/backb.png" />
+  </view>
+</view>
+<view class="sub" wx:if="{{flag}}">预约状态：已提交</view>
+<view class="main">
+  <view class="table">
+    <view class="table_txt">提交时间：</view>
+    <view class="table_name" style="color:#999;font-size:28rpx;">20189</view>
+  </view>
+  <view class="table">
+    <view class="table_txt">品名：</view>
+    <view class="table_name">20189</view>
+  </view>
+  <view class="table">
+    <view class="table_txt">品号：</view>
+    <view class="table_name">20189</view>
+  </view>
+  <view class="table">
+    <view class="table_txt">产品品种：</view>
+    <view class="table_name">20189</view>
+  </view>
+  <view class="table">
+    <view class="table_txt">总件数：</view>
+    <view class="table_name">20189</view>
+  </view>
+  <view class="table">
+    <view class="table_txt">单件重量：</view>
+    <view class="table_name">20189</view>
+  </view>
+  <view class="table">
+    <view class="table_txt">生产日期：</view>
+    <view class="table_name">20189</view>
+  </view>
+  <view class="table">
+    <view class="table_txt">保质期：</view>
+    <view class="table_name">20189</view>
+  </view>
+  <view class="table">
+    <view class="table_txt">预计到库时间:</view>
+    <view class="table_name">20189</view>
+  </view>
+  <view class="table table1">
+    <view class="table_txt" style="height:138rpx;">车辆联系信息:</view>
+    <view class="table_name">
+      <view style="margin-bottom:20rpx;">刘师傅
+        <text>15899746584</text>
+      </view>
+      <view>厢式货车
+        <text>沪A888888</text>
+      </view>
+    </view>
+
+  </view>
+  <view class="table">
+    <view class="table_txt">装卸方式：</view>
+    <view class="table_name">不需要</view>
+  </view>
+</view>
+<view class="btn">
+  <view class="{{flag===true? '.btn1' :'.btn0'}};" bindtap="suborder">提交预约</view>
+  <view style="background:#65C2F7;color:#fff;" bindtap="cancelorder">取消预约</view>
+</view>
+<view class='tip' wx:if="{{flag}}">
+  <view class="tip_title">您的订单已受理</view>
+  <view class="tip_box">
+    <view>排定时间段：
+      <text>2018-7-8-12:30</text>
+    </view>
+    <view>停靠月台：
+      <text>xx月台</text>
+    </view>
+    <view>联系窗口：
+      <text>xx窗口</text>
+    </view>
+    <view>备注：
+      <text>xxx</text>
+    </view>
+  </view>
+</view>

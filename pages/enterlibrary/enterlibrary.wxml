@@ -1,0 +1,104 @@
+<!--pages/enterlibrary/enterlibrary.wxml-->
+<view class="nav" style="padding-top:{{navh}}rpx;background:#65C2FB">
+  <text>在线预约</text>
+  <view class="back" bindtap="go">
+    <image src="/images/backb.png" />
+  </view>
+</view>
+<view class="title">预约入库信息</view>
+<form bindsubmit='submit'>
+  <view class="table">
+    <view class="table_title">
+      <text>*</text> 车辆联系信息:</view>
+    <view class="table_box">
+      <text>司机姓名:</text>
+      <input name="name" />
+    </view>
+    <view class="table_box">
+      <text>电话:</text>
+      <input name="phone" />
+    </view>
+    <view class="table_box">
+      <text>车牌号:</text>
+      <input name="carcode" />
+    </view>
+    <view class="table_box">
+      <text>车型:</text>
+      <view class="input">{{carTypeVal}}</view>
+      <picker bindchange="carTypeChange" value="{{index}}" range="{{carType}}">
+        <view class="select"></view>
+      </picker>
+    </view>
+  </view>
+  <view class="table talbe1">
+    <view class="table_box">
+      <text>预计到库时间:</text>
+      <view class="input">{{arriveDateVal}}</view>
+      <picker bindchange="arriveDateChange" value="{{time}}" mode="date">
+        <view class="select"></view>
+      </picker>
+    </view>
+    <view class="table_box">
+      <text>装卸方式:</text>
+      <view class="sel">
+        <view class="sel_box" wx:for="{{list}}" wx:for-item="v" wx:key="k">
+          <image class="box " src="{{v.checked?'/images/sel.png':'/images/unsel.png'}}" bindtap="selSingle" data-index="{{index}}" />
+          <view class=".text">{{v.name}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="table_box">
+      <text>品名:</text>
+      <input name="pname" />
+    </view>
+    <view class="table_box">
+      <text>总件数:</text>
+      <input name="num" />
+      <view style="position:absolute;right:90rpx;color:#666;font-size:24rpx;">件</view>
+    </view>
+    <view class="table_box">
+      <text>单个重量:</text>
+      <input name="weight" />
+      <view style="position:absolute;right:90rpx;color:#666;font-size:24rpx;">kg</view>
+    </view>
+    <view class="table_box">
+      <text>生产日期:</text>
+      <view class="input">{{productionDateVal}}</view>
+      <picker bindchange="productionDateChange" value="{{time}}" mode="date">
+        <view class="select"></view>
+      </picker>
+    </view>
+    <view class="table_box">
+      <text>保质期:</text>
+      <view class="input">{{qualityDateVal}}</view>
+      <picker bindchange="qualityDateChange" value="{{time}}" mode="date">
+        <view class="select"></view>
+      </picker>
+    </view>
+    <view class="table_box">
+      <text>产品品种:</text>
+      <view class="selbox">
+        <view class="selb">
+          <picker bindchange="qualityDateChange" value="{{time}}" mode="date">
+            <view class="select"></view>
+          </picker>
+          {{qualityDateVal}}
+        </view>
+        <view class="selb">
+          <picker bindchange="qualityDateChange" value="{{time}}" mode="date">
+            <view class="select"></view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="table_box">
+      <text>品号:</text>
+      <input name="pnum" />
+    </view>
+    <view class="table_box">
+      <text>备注:</text>
+      <textarea placeholder="请输入备注信息......" name="remarks" />
+    </view>
+  </view>
+  <button class="sub" style="width:525rpx;" form-type='submit'>保存</button>
+</form>
